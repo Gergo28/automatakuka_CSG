@@ -35,7 +35,7 @@ void loop() {
   duration = pulseIn(ECHO_PIN, HIGH);
   
   // Távolság kiszámítása
-  distance = duration * 0.0344 / 2; // Az ultrahang sebessége 343 m/s, és az értéket centiméterben adjuk meg.
+  distance = duration * 0.0344 / 3; // Az ultrahang sebessége 343 m/s, és az értéket centiméterben adjuk meg.
   
   // Ha a távolság kisebb, mint 10 cm, kinyitjuk a kukát
   if (distance > 0 && distance < 10) {
