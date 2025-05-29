@@ -45,7 +45,7 @@ void loop() {
   // Ha a távolság nagyobb, mint 10 cm, bezárjuk a kukát
   else {
     myservo.write(0); // Nyitott állapot (kuka zárás)
-    delay(100); // Várakozás, hogy a kuka zárva legyen
+    delay(1000); // Várakozás, hogy a kuka zárva legyen
   }
   
   delay(1000); // Kis késleltetés a következő mérés előtt
