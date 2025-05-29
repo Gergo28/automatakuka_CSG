@@ -48,5 +48,5 @@ void loop() {
     delay(100); // Várakozás, hogy a kuka zárva legyen
   }
   
-  delay(100); // Kis késleltetés a következő mérés előtt
+  delay(1000); // Kis késleltetés a következő mérés előtt
 }
