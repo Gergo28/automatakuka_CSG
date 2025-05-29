@@ -35,18 +35,18 @@ void loop() {
   duration = pulseIn(ECHO_PIN, HIGH);
   
   // Távolság kiszámítása
-  distance = duration * 0.0344 / 2; // Az ultrahang sebessége 343 m/s, és az értéket centiméterben adjuk meg.
+  distance = duration * 0.0344 / 3; // Az ultrahang sebessége 343 m/s, és az értéket centiméterben adjuk meg.
   
   // Ha a távolság kisebb, mint 10 cm, kinyitjuk a kukát
   if (distance > 0 && distance < 10) {
     myservo.write(90); // Záró pozíció (kuka nyitás)
-    delay(1000); // Várakozás, hogy a kuka nyitva legyen
+    delay(100); // Várakozás, hogy a kuka nyitva legyen .
   } 
   // Ha a távolság nagyobb, mint 10 cm, bezárjuk a kukát
   else {
     myservo.write(0); // Nyitott állapot (kuka zárás)
-    delay(1000); // Várakozás, hogy a kuka zárva legyen
+    delay(1000); // Várakozás, hogy a kuka zárva legyen .
   }
   
-  delay(1000); // Kis késleltetés a következő mérés előtt
+  delay(1000); // Kis késleltetés a következő mérés előtt .
 }
